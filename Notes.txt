@@ -1,0 +1,12 @@
+https://www.figma.com/design/DYUMcpPZb1pDSbKmpdidfC/Portfolio-(Community)?node-id=0-3&t=Zg183H9eqrCDFtdO-0
+
+I've created a responsive implementation of the portfolio design using vanilla HTML and CSS. Key features include:
+
+Clean, modern layout with a light cream background
+Responsive navigation with social links
+Hero section with circular profile image
+About section with timeline
+Work section with case studies
+Contact section with links
+Mobile-responsive design
+The design uses CSS variables for consistent colors and spacing, and implements a responsive grid layout that works well on both desktop and mobile devices. You can customize the colors, fonts, and content to match your preferences.

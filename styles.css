@@ -1,0 +1,285 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #FBF8CC;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+	color: #03045E;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: color 0.3s;
+	color: #03045E;
+}
+
+.nav-links a:hover {
+    color: #000080;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+#dribble img {
+    height: 20px;
+    width: 20px;
+}
+
+#behance img {
+    height: 25px;
+    width: 25px; 
+}
+
+#twitter img {
+    height: 20px;
+    width: 20px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 128px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.greeting {
+    font-size: 20px;
+    margin-bottom: 8px;
+	color: #03045E;
+    font-weight: 700px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #03045E;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.location {
+    font-size: 20px;
+    margin-bottom: 24px;
+	color: #03045E;
+    font-weight: 700px;
+}
+
+.resume-btn {
+    cursor: pointer;
+}
+
+.resume-btn img {
+    height: 50px;
+    width: 100px;
+}
+
+.resume-btn:hover {
+    background-color: #FFD700;
+}
+
+.hero-image {
+    position: relative;
+    margin-left: 64px;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.image-decoration {
+    position: absolute;
+    inset: 0;
+    border: 4px dotted #FFD700;
+    border-radius: 100%;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 8rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #F7F197;
+    margin-bottom: 2rem;
+}
+
+.section-intro {
+    max-width: 40rem;
+    margin-bottom: 4rem;
+    color: #03045E;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 2rem;
+}
+
+.timeline-item p{
+    color: #03045E;
+}
+
+.year {
+    font-weight: 500;
+    min-width: 8rem;
+    color: #03045E;
+    font-weight: bold;
+}
+
+.year img {
+    padding-top: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+/* Work Grid */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.section-intro p {
+    color: #03045E;
+}
+
+.work-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.date {
+    font-size: 0.875rem;
+    color: #03045E;
+}
+
+.work-item h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: #03045E;
+}
+
+.work-item p {
+    color: #03045E;
+}
+
+/* Contact Section */
+.contact-content {
+    display: flex;
+    gap: 3rem;
+}
+
+.contact-content img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info p {
+    color: #03045E;
+}
+.contact-links {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #03045E;
+    transition: color 0.3s;
+}
+
+.contact-links a:hover {
+    color: #000080;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-image {
+        margin-left: 0;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
